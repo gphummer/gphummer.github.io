@@ -20,13 +20,18 @@ li {
 }
 
 a:hover {
-  color: red;
+  color: green;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 /* IDs */
 
 #upper_navbar {
   margin-bottom: 0px;
+  color: #04375C;
 }
 
 #lower_navbar {
@@ -63,4 +68,5 @@ a:hover {
 
 #footer_of_footer {
   text-align: center;
+  color: #04375C;
 }
