@@ -50,18 +50,9 @@ a:link {
 }
 
 #posts {
-  margin: auto;
+  margin: 0 auto;
   position: relative;
-}
-
-.post_title {
-  text-align: center;
-  margin: auto;
-}
-
-.post_content {
-  text-align: center;
-  margin: auto;
+  width: 60%;
 }
 
 #footer {
@@ -74,4 +65,32 @@ a:link {
 #footer_of_footer {
   text-align: center;
   color: #04375C;
+  margin-top: 10%;
+}
+
+#latest_tweet {
+  padding-top: 12%;
+
+}
+
+#recent_posts {
+  position: relative;
+  padding-top: 16%;
+
+}
+
+#get_in_touch {
+  padding-top: 16%;
+
+}
+
+/* Classes */
+
+.post_title {
+  text-align: center;
+  margin: auto;
+}
+
+.post_content {
+  margin: 0 auto;
 }
