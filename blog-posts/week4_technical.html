@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> @granthummer | grant's_blog </title>
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css" />
+</head>
+<body>
+
+<div id="header">
+  <img id="header_image" src="../imgs/cool-g-100px-alpha.png" />
+  <ul id="upper_navbar">
+    <li> @granthummer </li>
+    |
+    <li> grant_pw_hummer </li>
+  </ul>
+<hr />
+  <ul id="lower_navbar">
+    <li> <a href="#">about </a>|</li>
+    <li> <a href="#">blog_archive </a>|</li>
+    <li> <a href="#">twitter </a>|</li>
+    <li> <a href="#">github </a>|</li>
+    <li> <a href="#">say_hello </a></li>
+  </ul>
+</div>
+
+<div id="posts">
+  <h1 class="post_title"> Let's Talk About Maps </h1>
+  <div class="post_content">
+    <p> Many of the most useful methods in Ruby come from the Enumerable module. One of these
+      methods I'm going to talk about today is the map method. The map method is called on an array
+      and it returns a new array with the results of running whatever code block is passed to it.
+   </p>
+    <p> For example, if you have an array of numbers, say [5,15,10] and you call [5,15,10].map {|a| a*2} the function would return [10,30,20]. By contrast, if you were to typed [5,15,10].each {|a| a * 2} the function would still return [5,15,10]. Why is this? Because map actually returns a NEW value, which each returns the ORIGINAL array. This makes map extremely useful when you are using the output of a method as an input into another method. </p>
+  </div>
+</div>
+
+<!--- three_column_footer -->
+
+<div id="footer">
+  <h3 id="latest_tweet"> latest_tweet </h3>
+  <h3 id="recent_posts"> recent_posts </h3>
+  <h3 id="get_in_touch"> get_in_touch </h3>
+</div>
+
+<div id="footer_of_footer"> @2014 grant_hummer </div>
+
+</body>
+</html>
