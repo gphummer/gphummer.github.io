@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> @granthummer | grant's_blog </title>
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css" />
+</head>
+<body>
+
+<div id="header">
+  <img id="header_image" src="../imgs/cool-g-100px-alpha.png" />
+  <ul id="upper_navbar">
+    <li> @granthummer </li>
+    |
+    <li> grant_pw_hummer </li>
+  </ul>
+<hr />
+  <ul id="lower_navbar">
+    <li> <a href="#">about </a>|</li>
+    <li> <a href="#">blog_archive </a>|</li>
+    <li> <a href="#">twitter </a>|</li>
+    <li> <a href="#">github </a>|</li>
+    <li> <a href="#">say_hello </a></li>
+  </ul>
+</div>
+
+<div id="posts">
+  <h1 class="post_title"> When To Use Classes in Ruby </h1>
+  <div class="post_content">
+    <p> Oftentimes in the course of creating a program you will want to do more than merely re-use a single code function. Instead, you will want to extend the concept of code reusability to include pre-defined properties and functions which interact with each other in an appropriately scoped manner. This is more or less the essence of object-oriented programming. This leads to a commonly asked question: how do I create classes in Ruby?
+ </p>
+    <p> When you design a class, think about the objects that will be created from that class type. Think about the things the object knows and the things the object does. </p>
+
+<p> Things an object knows about itself are called instance variables. They represent an object's state (the data - for example, the quantity and the product id), and can have unique values for each object of that type. </p>
+
+<p> Things an object can do are called methods. </p>
+
+    <p> Let's dive in and create a class of a car: </p>
+
+    Class Car <br />
+    def initialize(brand, model, year) <br />
+    # Instance variables <br />
+      @brand = brand <br />
+      @model = model <br />
+      @year = year <br />
+    end <br /> <br />
+
+    def drive <br />
+      puts "I'm driving a #{@brand}!" <br />
+    end <br /> <br />
+
+    def honk <br />
+      puts "Honk!" <br />
+    end <br /> <br />
+    end <br />
+
+    <p> Now let's make an instance of the class: </p>
+
+    my_prius = Car.new('Toyota', 'Prius', 2013) <br />
+
+    <p> Now let's call the class's methods: </p>
+
+    my_prius.drive <br />
+    my_prius.honk <br />
+
+    <p> And that's how you make a class and call it! Hope you learned something. </p>
+
+
+
+  </div>
+</div>
+
+<!--- three_column_footer -->
+
+<div id="footer">
+  <h3 id="latest_tweet"> latest_tweet </h3>
+  <h3 id="recent_posts"> recent_posts </h3>
+  <h3 id="get_in_touch"> get_in_touch </h3>
+</div>
+
+<div id="footer_of_footer"> @2014 grant_hummer </div>
+
+</body>
+</html>
