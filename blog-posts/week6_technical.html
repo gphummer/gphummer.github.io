@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> @granthummer | grant's_blog </title>
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css" />
+</head>
+<body>
+
+<div id="header">
+  <img id="header_image" src="../imgs/cool-g-100px-alpha.png" />
+  <ul id="upper_navbar">
+    <li> @granthummer </li>
+    |
+    <li> grant_pw_hummer </li>
+  </ul>
+<hr />
+  <ul id="lower_navbar">
+    <li> <a href="#">about </a>|</li>
+    <li> <a href="#">blog_archive </a>|</li>
+    <li> <a href="#">twitter </a>|</li>
+    <li> <a href="#">github </a>|</li>
+    <li> <a href="#">say_hello </a></li>
+  </ul>
+</div>
+
+<div id="posts">
+  <h1 class="post_title"> Functional Programming vs Object-Oriented Programming </h1>
+  <div class="post_content">
+    <p> In this post I will compare the functional and object-oriented programming paradigms, exploring the definitions of each paradigm and when it would be appropriate to use either one in a production application. To begin, let's start by very roughly defining what object-oriented programming is and what functional programming is.
+ </p>
+    <p> First, it's important to understand that at the end of the day, all code is basically procedural. That is, when the code is compiled, it executes itself in a linear, procedural manner; the distinction between object-oriented programming and functional programming is fundamentally a human one. Another essential idea is that different languages are not binary in their adoption of functional vs object-oriented methodologies. Now, onto the definitions. Object-oriented programming consists of classes, which might be thought of a 'blueprints' for object creation, and the objects themselves, which are comprised of data and methods for manipulating the data, all stored within a single unit of manipulability. The only way that a user can access the data is via the object's "methods"(subroutines). Because of this, the internal workings of an object may be changed without affecting any code that uses the object. Essentially, object-oriented programming makes coding far more efficient by storing reusable code in a single place.</p>
+    <p> I will admit I don't fully understand functional programming, and the following definition is my best attempt at explaining it. Functional programming is a paradigm that treats computation as the evaluation of mathemtical functions. In addition, functional programming avoids changing state and mutable data. In a functional program, the output value of a function depends only on the arguments that are input to the function, so calling a function <i>f</i> twice with the same value for an argument <i>x</i> will produce the same result <i>f(x)</i> both times. Functional programming eliminates function side effects, i.e. changes in state that do not depend on function inputs, which can make it much easier to understand and predict the behavior of a program. </p>
+    <p> So, which paradigm should you use when you're deciding to create an application? A good rule of thumb is to consider about how often the relationships among different elements of the code change, and make the decision on that basis. Relationships that are unlikely to change but are subject to being operated upon by a changing cast of entities should be written in a more functional style, while those that change relatively often can be written in a more object-oriented style. Consider a hypothetical business application. If part of this application consists of managers writing reports, with a one-to-many relationship (that is, each report has exactly one manager, but each manager has many reports) it doesn't make a lot of sense to hide this relationship behind an API where manager objects delegate operations invisibly. The relationship could be better constructed as data with operations acting on it. By contrast, a rule about shipping costs is likely to change, and it should be encapsulated as much as possible in an object-oriented style to insulate the rest of the program against future alterations.
+    </p>
+    <p> I hope you've learned a bit about functional vs object-oriented programming. I certainly did during the course of writing this blog post. Adios!
+    </p>
+
+  </div>
+</div>
+
+<!--- three_column_footer -->
+
+<div id="footer">
+  <h3 id="latest_tweet"> latest_tweet </h3>
+  <h3 id="recent_posts"> recent_posts </h3>
+  <h3 id="get_in_touch"> get_in_touch </h3>
+</div>
+
+<div id="footer_of_footer"> @2014 grant_hummer </div>
+
+</body>
+</html>
