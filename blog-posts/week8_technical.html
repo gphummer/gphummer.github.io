@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> @granthummer | grant's_blog </title>
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css" />
+</head>
+<body>
+
+<div id="header">
+  <img id="header_image" src="../imgs/cool-g-100px-alpha.png" />
+  <ul id="upper_navbar">
+    <li> @granthummer </li>
+    |
+    <li> grant_pw_hummer </li>
+  </ul>
+<hr />
+  <ul id="lower_navbar">
+    <li> <a href="#">about </a>|</li>
+    <li> <a href="#">blog_archive </a>|</li>
+    <li> <a href="#">twitter </a>|</li>
+    <li> <a href="#">github </a>|</li>
+    <li> <a href="#">say_hello </a></li>
+  </ul>
+</div>
+
+<div id="posts">
+  <h1 class="post_title"> All About Sorting </h1>
+  <div class="post_content">
+    <p> Being able to sort through data efficiently is crucial to the performance of any computer program or web application. To use Twitter as an example, efficient sorting through a databse can mean the difference between seeing all your friend's tweets immediately, or having to wait minutes/hours to see what your friends are saying. The latter scenario is obviously terrible, and if people had to wait hours to see a tweet show up Twitter would lose its users quite rapidly. Sorting is an important precursor to the use of other algorithms (such as search and merge algorithms) which require input data to be in sorted lists.
+ </p>
+    <p> This leads to the next logical questions: How does sorting work? And what are the different ways to sort data? Sorts are classified by a variety of factors, including computational complexity (best, average and worst behavior across a variety of scenarios), memory usage, recursion, stability (whether the sort maintains the relative order of records), and so forth. For this post I'll only focus on computational complexity. It's important to understand that many algorithms that have the same efficiency do not have the same speed on the same input. As I mentioned earlier, algorithms must be judged based on their average case, best case, and worst case efficiency. Some algorithms, such as quick sort, perform exceptionally well for some inputs, but horribly for others. Other algorithms, such as merge sort, are unaffected by the order of input data. </p>
+    <p> A comprehensive list of sorting efficiency can be found <a href="http://en.wikipedia.org/wiki/Sorting_algorithm#Comparison_of_algorithms">here</a>. Some algorithms (selection, bubble, heapsort) work by moving elements to their final position, one at a time. You sort an array of size N, compare elements [a] vs [a + 1] and swap their positions if a > a + 1. Other algorithms (insertion, quicksort, counting, radix) put items into a temporary position closer to their final position. You continually rescan, moving items closer to the final position with each iteration.   </p>
+    <p> If you have plenty of memory, a good compromise is to use the merge sort. It has n log n performance across all scenarios. <a href="http://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif">Here</a> is an image link showing how the merge sort works. You divide the unsorted list into n sublists, each containing 1 element. Then you compare each single element list with the adjacent single element list to sort and merge the two lists, giving you a list of two elements.  You then repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining. This is the newly sorted list. </p>
+    <p> I could go into more detail about all the different types of sorts, but that's what the rest of the internet is for! Check out wikipedia for a lot more info on the topic. </p>
+  </div>
+</div>
+
+<!--- three_column_footer -->
+
+<div id="footer">
+  <h3 id="latest_tweet"> latest_tweet </h3>
+  <h3 id="recent_posts"> recent_posts </h3>
+  <h3 id="get_in_touch"> get_in_touch </h3>
+</div>
+
+<div id="footer_of_footer"> @2014 grant_hummer </div>
+
+</body>
+</html>
